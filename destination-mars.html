@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="with=divice-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../starter-code/assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2? family=poppins:wght@100;200;300;400;600;700display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/style.css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Space tourism</title>
+</head>
+<body>
+<section class="sub-header">
+	<nav>
+		<img src="./assets/shared/logo.svg">
+		<div class="nav-links" Id="checkmenu">
+			<i class="fa fa-times" onclick ="hideMenu()"></i>
+			<ul>
+				<li><a href="index.html"><span>00</span> Home</a></li>
+				<li><a class="active" href="destination-mars.html"><span>01</span> Destination</a></li>
+				<li><a href="crew-engineer.html"><span>02</span> Crew</a></li>
+				<li><a href="technology-vehicle.html"><span>03</span> Technology</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars"  onclick ="showMenu()"></i>
+	</nav>
+	<div class="destination">
+     <div class="destination-col">
+		<h5>01 PICK YOUR DESTINATION</h5>
+		<img src="./assets/destination/image-mars.png">
+	</div>
+	<div class="destination-col">
+	<div class="destination-col-links">
+	<ul>
+		<li><a href="destination - moon.html">MOON</a></li>
+		<li><a class="active" href="destination-mars.html">MARS</a></li>
+		<li><a href="destination - europa.html">EUROPA</a></li>
+		<li><a href="destination - titan.html">TITAN</a></li>
+	</ul>
+		</div>
+		<h1>M A R S</h1>
+		<p>Dont forget to pack your hiking boots. You'll need them to tackle Olympus Mons,
+		 the tallest planetary mountain in our solar system. Its two and a half times the size of Everest!</p>
+		 <hr>
+		 <div class="destination-row">
+			 <div class="destination-col2">
+				 <p>AVG. DISTANCE</p>
+				 <h2>225 MIL.KM</h2>
+			 </div>
+			 <div class="destination-col2">
+				<p>EST. TREVEL TIME</p>
+				<h2>9 MONTHS</h2>
+			</div>
+		 </div>
+		</div>
+	</div>
+</section>
+
+
+<!---------- JavaScript for toggle Menu ------->
+<script>
+	var checkmenu = document.getElementById("checkmenu")  
+	function showMenu(){
+		checkmenu.style.right = "0";
+	}
+	function hideMenu(){
+		checkmenu.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>

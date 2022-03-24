@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="with=divice-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../starter-code/assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2? family=poppins:wght@100;200;300;400;600;700display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/style.css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Space tourism</title>
+</head>
+<body>
+<section class="sub-header3">
+	<nav>
+		<img src="./assets/shared/logo.svg">
+		<div class="nav-links" Id="checkmenu">
+			<i class="fa fa-times" onclick ="hideMenu()"></i>
+			<ul>
+				<li><a href="index.html">00 Home</a></li>
+				<li><a href="destination-mars.html">01 Destination</a></li>
+				<li><a href="crew-engineer.html">02 Crew</a></li>
+				<li><a class="active" href="technology-vehicle.html">03 Technology</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars"  onclick ="showMenu()"></i>
+	</nav>
+	<div class="technology">
+     <div class="technology-col">
+		<h5>03 SPACE LAUNCH 101</h5>
+		<div class="technology-col-row">
+			<div class="technology-col-col2">
+				<div class="technology-col-links">
+			<ul>
+				<li><a href="technology-vehicle.html">1</a></li>
+				<li><a href="technology-spaceport.html">2</a></li>
+				<li><a class="choosen" href="technology-capsule.html">3</a></li>
+				</ul>
+				</div>
+				</div>
+				<div class="technology-col-col2">
+	<h6>THE TERMINOLOGY...</h6>
+		<h1>SPACE CAPSULE</h1>
+		<p> A space capsule is an often-crewed spacecraft that
+			 uses a blunt-body reentry capsule to reenter the 
+			 Earth's atmosphere without wings. Our capsule is
+			  where you'll spend your time during the flight.
+			   It includes a space gym, cinema,
+		 and plenty of other activities to keep you entertained.</p>
+	</div>
+	</div>
+	</div>
+	<div class="technology-col">
+	<img src="./assets/technology/image-space-capsule-portrait.jpg">
+	</div>
+</section>
+
+
+<!---------- JavaScript for toggle Menu ------->
+<script>
+	var checkmenu = document.getElementById("checkmenu")  
+	function showMenu(){
+		checkmenu.style.right = "0";
+	}
+	function hideMenu(){
+		checkmenu.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>
