@@ -98,7 +98,7 @@ font-size: 15px;
 }
 
 
-@media(max-width:602px){
+@media screen and (min-width:270px) and (max-width:602px){
 	.header{
 		background-image: url(../home/background-home-mobile.jpg);
 		height:100%;
@@ -136,9 +136,12 @@ font-size: 15px;
 		margin: 0;
 	}
 	.text-box{
-		flex-wrap: wrap;
+		/* flex-wrap: wrap; */
 		display: block;
 		flex-basis:0px;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
 	}
 	.text-box-col{
 		padding: 0px;
@@ -151,15 +154,14 @@ font-size: 15px;
 
 	}
 	.text-box h1{
-		font-size: 10px;
+		font-size: 35px;
 	}
 	.text-box p{
 		font-size: 12px;
-		margin:0px 0px;
+		text-align: center;
+		margin: 0 0 0 20px;
 	}
 	.explore{
-		padding: 15% 15px;
-		margin-left: 10%;
 		margin-top: 35%;
 		
 	}
@@ -169,7 +171,7 @@ font-size: 15px;
 		
 }
 
-@media(max-width:1025px){
+@media screen and (min-width:602px) and (max-width:958px){
 	.header{
 		background-image: url(../home/background-home-tablet.jpg);
 		height:100%;
@@ -226,7 +228,7 @@ font-size: 15px;
 
 	}
 	.text-box h1{
-		font-size: 60px;
+		font-size: 50px;
 	}
 	.text-box p{
 		font-size: 25px;
