@@ -1,61 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="with=divice-width, initial-scale=1.0">
-<<<<<<< HEAD
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-=======
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
->>>>>>> 1282785af7c3d0fb418dc28db060d3fff3241fa6
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2? family=poppins:wght@100;200;300;400;600;700display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/style.css/font-awesome.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
-	<title>Space tourism</title>
+  <link rel="stylesheet" href="./assets/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
-<section class="header">
-	<nav>
-		<img src="./assets/shared/logo.svg">
-		<div class="nav-links" Id="checkmenu">
-			<i class="fa fa-times" onclick ="hideMenu()"></i>
-			<ul>
-				<li><a class="active" href="index.html"><span>00</span> Home</a></li>
-				<li><a href="destination-mars.html"><span>01</span> Destination</a></li>
-				<li><a href="crew-engineer.html"><span>02</span> Crew</a></li>
-				<li><a href="technology-vehicle.html"><span>03</span> Technology</a></li>
-			</ul>
-		</div>
-		<i class="fa fa-bars"  onclick ="showMenu()"></i>
-	</nav>
-	<row class="text-box">
-     <div class="text-box-col">
-		<h5>SO, YOU  WANT TO TRAVEL TO</h5>
-		<h1>S P A C E</h1>
-		<P>Let's face it;if you want to go to space,you might as well genuinely go to outer space and not hover kind of on the edge of it.
-			 Well sit back, and relax because we'll give you a truly out of this world's experience!</P>
-	</div>
-	<div class="text-box-col">
-	<div class="explore">
-		<h6>EXPLORE</h6>
-		</div>
-		</div>
-	</div>
-</section>
+  <div class="home-container">
+<nav>
+  <div class="logo">
+    <img src="./assets/shared/logo.svg" alt="logo">
+  </div>
+  <div class="line"></div>
+ <div class="navList" Id="checkmenu">
+  <i class="fa fa-times" onclick ="hideMenu()"></i>
+   <ul>
+     <li><a href="./index.html" class="active"><span> 00</span> Home</a></li>
+     <li><a href="./destination-mars.html"><span> 01</span> Destination</a></li>
+     <li><a href="./crew-engineer.html"><span> 02</span> Crew</a></li>
+     <li><a href="./technology-vehicle.html"><span> 03</span> Technology</a></li>
+   </ul>
+ </div>
+ <i class="fa fa-bars" onclick ="showMenu()"></i>
+</nav>
+
+<div class="information">
+  <div class="text">
+  <h4>So, you want to travel to</h4>
+ <h2> Space</h2>
+ <p> Let’s face it; if you want to go to space, you might as well genuinely go to 
+  outer space and not hover kind of on the edge of it. Well sit back, and relax 
+  because we’ll give you a truly out of this world experience!</p>
+</div>
+<div class="explore">
+  Explore
+</div>
+</div>
+</div>
 
 
-<!---------- JavaScript for toggle Menu ------->
-<script>
-	var checkmenu = document.getElementById("checkmenu")  
-	function showMenu(){
-		checkmenu.style.right = "0";
-	}
-	function hideMenu(){
-		checkmenu.style.right = "-200px";
-	}
-</script>
-
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
