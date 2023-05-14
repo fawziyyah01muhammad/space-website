@@ -3,5 +3,5 @@ var showmenu = document.getElementById("checkmenu")
 		showmenu.style.right = "0px";
 	}
 	function hideMenu(){
-		showmenu.style.right = "-200px";
+		showmenu.style.right = "-400px";
     }
